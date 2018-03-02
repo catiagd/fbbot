@@ -21,10 +21,10 @@ smile=[":D",":P",":)",";)",":*"]
 class buttons:
     btnmenu = [
         Template.ButtonPostBack("Serviços", "MUSIC_PAYLOAD"),
-        Template.ButtonPostBack("Produtos","PROD_PAYLOAD"),
+        Template.ButtonPostBack('"Produtos recreativos"',"PROD_PAYLOAD"),
         Template.ButtonPostBack("Ajuda","AJUDA_PAYLOAD")
     ]
-'''
+
 class quickReply:
         quick_musica = [{'title': 'Rock', 'payload': 'PICK_ROCK'},
                         {'title': "Rn'B", 'payload': 'PICK_RnB'},
@@ -49,7 +49,7 @@ class quickReply:
             elif genre == "PICK_CLASSIC":
                 playlist = ["https://www.youtube.com/watch?v=O6NRLYUThrY","https://www.youtube.com/watch?v=W-fFHeTX70Q","https://www.youtube.com/watch?v=6JQm5aSjX6g",""]
             return random.choice(playlist)
-'''
+
 class Handle:
     def get_num(): #Obtem um numero random entre 1 e 2
         numbergen=[1,2]
